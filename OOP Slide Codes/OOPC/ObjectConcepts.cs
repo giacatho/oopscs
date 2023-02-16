@@ -116,26 +116,26 @@ class TestThisReference
 {
    public static void Main()
    {
-         //ThisReferenceExample ex =
-         //      new ThisReferenceExample(1);
-         //ThisReferenceExample2 ex =
-         //   new ThisReferenceExample2(1);
-         //ex.Method1();
+      //ThisReferenceExample ex =
+      //      new ThisReferenceExample(1);
+      //ThisReferenceExample2 ex =
+      //   new ThisReferenceExample2(1);
+      //ex.Method1();
 
-         //new ThisReferenceExample3().Print();
-         //new ThisReferenceExample3(1).Print();
+      new ThisReferenceExample3().Print();
+      new ThisReferenceExample3(2).Print();
 
-         Car car = new Car("Audi A4");
-         Driver driver = new Driver("Alex");
-         driver.BuyCar(car);
+      //Car car = new Car("Audi A4");
+      //Driver driver = new Driver("Alex");
+      //driver.BuyCar(car);
 
-         Console.WriteLine("Driver name: " +
-            driver.Name);
-         Console.WriteLine("Car model: " +
-            car.Model + " and owner: " +
-            car.Owner.Name);
+      //Console.WriteLine("Driver name: " +
+      //   driver.Name);
+      //Console.WriteLine("Car model: " +
+      //   car.Model + " and owner: " +
+      //   car.Owner.Name);
 
-      }
+    }
    }
 
 public class Car
@@ -213,11 +213,11 @@ public class Driver
       private int number1;
       private int number2;
       public ThisReferenceExample3() 
-         : this(-1, -1)
+         : this(-1, 1)
       {
       }
       public ThisReferenceExample3(int number1) 
-         : this(number1, -1)
+         : this(number1, 1)
       {
       }
       public ThisReferenceExample3(
