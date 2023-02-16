@@ -395,4 +395,20 @@ public class Circle2
             radius, GetArea());
    }
 }
+
+class MyFirstProgram
+{
+  static void Main()
+  {
+    for (int i = 1; i <= 10; i++)
+      Console.WriteLine(i + "\t" + NumberType(i));
+  }
+  static string NumberType(int num)
+  {
+    if ((num % 2) == 0)
+      return "Even";
+    else
+      return "Odd";
+  }
+}
 }
